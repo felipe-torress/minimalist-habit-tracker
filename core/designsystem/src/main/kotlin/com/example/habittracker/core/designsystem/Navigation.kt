@@ -95,8 +95,8 @@ object HabitTrackerNavigationDefaults {
 //region --- Previews ---
 @ThemePreviews
 @Composable
-fun HabitTrackerNavigationMuseumTabSelectedPreview() {
-    val items = listOf("Museum", "Profile")
+fun HabitTrackerNavigationHomeTabSelectedPreview() {
+    val items = listOf("Home", "Profile")
     val icons = listOf(
         HabitTrackerIcons.AddUnselected,
         HabitTrackerIcons.PersonUnselected
@@ -106,7 +106,7 @@ fun HabitTrackerNavigationMuseumTabSelectedPreview() {
         HabitTrackerIcons.PersonSelected
     )
 
-    val selectedTabIndex = items.indexOf("Museum")
+    val selectedTabIndex = items.indexOf("Home")
 
     HabitTrackerTheme {
         HabitTrackerNavigationBar {
@@ -136,7 +136,7 @@ fun HabitTrackerNavigationMuseumTabSelectedPreview() {
 @ThemePreviews
 @Composable
 fun HabitTrackerNavigationProfileTabSelectedPreview() {
-    val items = listOf("Museum", "Profile")
+    val items = listOf("Home", "Profile")
     val icons = listOf(
         HabitTrackerIcons.AddUnselected,
         HabitTrackerIcons.PersonUnselected
