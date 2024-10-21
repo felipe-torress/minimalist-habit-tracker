@@ -45,7 +45,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.feature.museum)
+    implementation(projects.feature.home)
     implementation(projects.feature.profile)
 
     implementation(projects.core.designsystem)

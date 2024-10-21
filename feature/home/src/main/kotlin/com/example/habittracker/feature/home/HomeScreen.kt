@@ -1,4 +1,4 @@
-package com.example.habittracker.feature.museum
+package com.example.habittracker.feature.home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -13,33 +13,33 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 
 @Composable
-fun MuseumRoute(
-    viewModel: MuseumViewModel = hiltViewModel()
+fun HomeRoute(
+    viewModel: HomeViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    MuseumScreen(uiState)
+    HomeScreen(uiState)
 }
 
 @Composable
-fun MuseumScreen(
-    uiState: MuseumUIState
+fun HomeScreen(
+    uiState: HomeUIState
 ) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()
     ) {
-        Text(stringResource(id = R.string.feature_museum_title))
+        Text(stringResource(id = R.string.feature_home_title))
     }
 }
 
 @Composable
-fun MuseumScreenEmptyState() {
+fun HomeScreenEmptyState() {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()
     ) {
-        Text(text = stringResource(R.string.feature_museum_screen_empty_state_text))
+        Text(text = stringResource(R.string.feature_home_screen_empty_state_text))
     }
 }

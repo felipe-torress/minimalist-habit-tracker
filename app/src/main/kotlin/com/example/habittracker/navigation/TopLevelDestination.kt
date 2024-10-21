@@ -1,7 +1,7 @@
 package com.example.habittracker.navigation
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.habittracker.feature.museum.R as museumR
+import com.example.habittracker.feature.home.R as homeR
 import com.example.habittracker.feature.profile.R as profileR
 import com.example.habittracker.core.designsystem.icon.HabitTrackerIcons
 
@@ -15,10 +15,10 @@ enum class TopLevelDestination(
     val unselectedIcon: ImageVector,
     val iconTextId: Int,
 ) {
-    MUSEUM(
+    HOME(
         selectedIcon = HabitTrackerIcons.AddSelected,
         unselectedIcon = HabitTrackerIcons.AddUnselected,
-        iconTextId = museumR.string.feature_museum_title,
+        iconTextId = homeR.string.feature_home_title,
     ),
     PROFILE(
         selectedIcon = HabitTrackerIcons.PersonSelected,

@@ -25,4 +25,4 @@ include(":core:model")
 include(":core:data")
 
 include(":feature:profile")
-include(":feature:museum")
+include(":feature:home")

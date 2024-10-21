@@ -10,12 +10,12 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import androidx.tracing.trace
-import com.example.habittracker.feature.museum.navigation.MUSEUM_ROUTE
-import com.example.habittracker.feature.museum.navigation.navigateToMuseum
+import com.example.habittracker.feature.home.navigation.HOME_ROUTE
+import com.example.habittracker.feature.home.navigation.navigateToHome
 import com.example.habittracker.feature.profile.navigation.PROFILE_ROUTE
 import com.example.habittracker.feature.profile.navigation.navigateToProfile
 import com.example.habittracker.navigation.TopLevelDestination
-import com.example.habittracker.navigation.TopLevelDestination.MUSEUM
+import com.example.habittracker.navigation.TopLevelDestination.HOME
 import com.example.habittracker.navigation.TopLevelDestination.PROFILE
 
 @Composable
@@ -32,7 +32,7 @@ class AppState(val navController: NavHostController) {
 
     val currentTopLevelDestination: TopLevelDestination?
         @Composable get() = when (currentDestination?.route) {
-            MUSEUM_ROUTE -> MUSEUM
+            HOME_ROUTE -> HOME
             PROFILE_ROUTE -> PROFILE
             else -> null
         }
@@ -60,7 +60,7 @@ class AppState(val navController: NavHostController) {
             }
 
             when (topLevelDestination) {
-                MUSEUM -> navController.navigateToMuseum(topLevelNavOptions)
+                HOME -> navController.navigateToHome(topLevelNavOptions)
                 PROFILE -> navController.navigateToProfile(topLevelNavOptions)
             }
         }

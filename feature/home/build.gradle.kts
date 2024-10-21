@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.habittracker.feature.museum"
+    namespace = "com.example.habittracker.feature.home"
 }
 
 dependencies {
