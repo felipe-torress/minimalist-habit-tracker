@@ -17,10 +17,10 @@
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
 import com.android.build.gradle.BaseExtension
-import com.example.aesthetic.configureBadgingTasks
-import com.example.aesthetic.configureGradleManagedDevices
-import com.example.aesthetic.configureKotlinAndroid
-import com.example.aesthetic.configurePrintApksTask
+import com.example.habittracker.configureBadgingTasks
+import com.example.habittracker.configureGradleManagedDevices
+import com.example.habittracker.configureKotlinAndroid
+import com.example.habittracker.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -32,7 +32,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             with(pluginManager) {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
-                apply("aesthetic.android.lint")
+                apply("habittracker.android.lint")
                 apply("com.dropbox.dependency-guard")
             }
 

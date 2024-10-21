@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.google.samples.apps.aesthetic.buildlogic"
+group = "com.google.samples.apps.habittracker.buildlogic"
 
 // Configure the build-logic plugins to target JDK 17
 // This matches the JDK used to build the project, and is not related to what is running on device.
@@ -39,59 +39,59 @@ tasks {
 gradlePlugin {
     plugins {
         register("androidApplicationCompose") {
-            id = "aesthetic.android.application.compose"
+            id = "habittracker.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
         register("androidApplication") {
-            id = "aesthetic.android.application"
+            id = "habittracker.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidApplicationJacoco") {
-            id = "aesthetic.android.application.jacoco"
+            id = "habittracker.android.application.jacoco"
             implementationClass = "AndroidApplicationJacocoConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "aesthetic.android.library.compose"
+            id = "habittracker.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "aesthetic.android.library"
+            id = "habittracker.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidFeature") {
-            id = "aesthetic.android.feature"
+            id = "habittracker.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
         register("androidLibraryJacoco") {
-            id = "aesthetic.android.library.jacoco"
+            id = "habittracker.android.library.jacoco"
             implementationClass = "AndroidLibraryJacocoConventionPlugin"
         }
         register("androidTest") {
-            id = "aesthetic.android.test"
+            id = "habittracker.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
         register("androidHilt") {
-            id = "aesthetic.android.hilt"
+            id = "habittracker.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
         register("androidRoom") {
-            id = "aesthetic.android.room"
+            id = "habittracker.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
         register("androidFirebase") {
-            id = "aesthetic.android.application.firebase"
+            id = "habittracker.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
         register("androidFlavors") {
-            id = "aesthetic.android.application.flavors"
+            id = "habittracker.android.application.flavors"
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
         }
         register("androidLint") {
-            id = "aesthetic.android.lint"
+            id = "habittracker.android.lint"
             implementationClass = "AndroidLintConventionPlugin"
         }
         register("jvmLibrary") {
-            id = "aesthetic.jvm.library"
+            id = "habittracker.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
     }

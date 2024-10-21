@@ -1,4 +1,4 @@
-package com.example.aesthetic.feature.museum
+package com.example.habittracker.feature.museum
 
 sealed interface MuseumUIState {
     data object Loading : MuseumUIState

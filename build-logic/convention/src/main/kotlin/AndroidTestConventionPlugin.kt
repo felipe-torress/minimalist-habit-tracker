@@ -15,8 +15,8 @@
  */
 
 import com.android.build.gradle.TestExtension
-import com.example.aesthetic.configureGradleManagedDevices
-import com.example.aesthetic.configureKotlinAndroid
+import com.example.habittracker.configureGradleManagedDevices
+import com.example.habittracker.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

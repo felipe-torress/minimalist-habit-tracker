@@ -1,10 +1,10 @@
-package com.example.aesthetic.feature.museum.navigation
+package com.example.habittracker.feature.museum.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
-import com.example.aesthetic.feature.museum.MuseumRoute
+import com.example.habittracker.feature.museum.MuseumRoute
 
 const val MUSEUM_ROUTE = "museum_route"
 

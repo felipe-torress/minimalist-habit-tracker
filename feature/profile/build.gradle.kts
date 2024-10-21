@@ -1,11 +1,11 @@
 plugins {
-    alias(libs.plugins.aesthetic.android.feature)
-    alias(libs.plugins.aesthetic.android.library.compose)
-    alias(libs.plugins.aesthetic.android.library.jacoco)
+    alias(libs.plugins.habittracker.android.feature)
+    alias(libs.plugins.habittracker.android.library.compose)
+    alias(libs.plugins.habittracker.android.library.jacoco)
 }
 
 android {
-    namespace = "com.example.aesthetic.feature.profile"
+    namespace = "com.example.habittracker.feature.profile"
 }
 
 dependencies {

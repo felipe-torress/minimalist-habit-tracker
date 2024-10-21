@@ -1,12 +1,12 @@
 plugins {
-    alias(libs.plugins.aesthetic.android.library)
-    alias(libs.plugins.aesthetic.android.library.jacoco)
-    alias(libs.plugins.aesthetic.android.hilt)
+    alias(libs.plugins.habittracker.android.library)
+    alias(libs.plugins.habittracker.android.library.jacoco)
+    alias(libs.plugins.habittracker.android.hilt)
     id("kotlinx-serialization")
 }
 
 android {
-    namespace = "com.example.aesthetic.core.data"
+    namespace = "com.example.habittracker.core.data"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

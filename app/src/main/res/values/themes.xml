@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="NightAdjusted.Theme.Aesthetic" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="NightAdjusted.Theme.HabitTracker" parent="android:Theme.Material.Light.NoActionBar" />
 
-    <style name="Theme.Aesthetic" parent="NightAdjusted.Theme.Aesthetic" />
+    <style name="Theme.HabitTracker" parent="NightAdjusted.Theme.HabitTracker" />
 
     <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 
-    <style name="Theme.Aesthetic.Splash" parent="NightAdjusted.Theme.Splash">
+    <style name="Theme.HabitTracker.Splash" parent="NightAdjusted.Theme.Splash">
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
-        <item name="postSplashScreenTheme">@style/Theme.Aesthetic</item>
+        <item name="postSplashScreenTheme">@style/Theme.HabitTracker</item>
     </style>
 </resources>

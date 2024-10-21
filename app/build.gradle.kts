@@ -1,24 +1,22 @@
-
-import com.example.aesthetic.AestheticBuildType
-
+import com.example.habittracker.HabitTrackerBuildType
 
 plugins {
-    alias(libs.plugins.aesthetic.android.application)
-    alias(libs.plugins.aesthetic.android.application.compose)
-    alias(libs.plugins.aesthetic.android.application.flavors)
-    alias(libs.plugins.aesthetic.android.application.jacoco)
-    alias(libs.plugins.aesthetic.android.hilt)
+    alias(libs.plugins.habittracker.android.application)
+    alias(libs.plugins.habittracker.android.application.compose)
+    alias(libs.plugins.habittracker.android.application.flavors)
+    alias(libs.plugins.habittracker.android.application.jacoco)
+    alias(libs.plugins.habittracker.android.hilt)
     id("jacoco")
-    alias(libs.plugins.aesthetic.android.application.firebase)
+    alias(libs.plugins.habittracker.android.application.firebase)
     alias(libs.plugins.baselineprofile)
     alias(libs.plugins.roborazzi)
 }
 
 android {
-    namespace = "com.example.aesthetic"
+    namespace = "com.example.habittracker"
 
     defaultConfig {
-        applicationId = "com.example.aesthetic"
+        applicationId = "com.example.habittracker"
         versionCode = 1
         versionName = "1.0.0"
 
@@ -30,7 +28,7 @@ android {
 
     buildTypes {
         debug {
-            applicationIdSuffix = AestheticBuildType.DEBUG.applicationIdSuffix
+            applicationIdSuffix = HabitTrackerBuildType.DEBUG.applicationIdSuffix
         }
     }
 

@@ -15,7 +15,7 @@
  */
 
 import androidx.room.gradle.RoomExtension
-import com.example.aesthetic.libs
+import com.example.habittracker.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

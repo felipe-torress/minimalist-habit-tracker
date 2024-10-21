@@ -1,4 +1,4 @@
-package com.example.aesthetic.feature.museum
+package com.example.habittracker.feature.museum
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

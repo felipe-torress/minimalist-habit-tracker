@@ -1,4 +1,4 @@
-package com.example.aesthetic.feature.museum
+package com.example.habittracker.feature.museum
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

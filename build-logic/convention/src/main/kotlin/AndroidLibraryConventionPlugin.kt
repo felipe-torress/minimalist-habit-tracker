@@ -16,11 +16,11 @@
 
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import com.example.aesthetic.configureFlavors
-import com.example.aesthetic.configureGradleManagedDevices
-import com.example.aesthetic.configureKotlinAndroid
-import com.example.aesthetic.configurePrintApksTask
-import com.example.aesthetic.disableUnnecessaryAndroidTests
+import com.example.habittracker.configureFlavors
+import com.example.habittracker.configureGradleManagedDevices
+import com.example.habittracker.configureKotlinAndroid
+import com.example.habittracker.configurePrintApksTask
+import com.example.habittracker.disableUnnecessaryAndroidTests
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -33,7 +33,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             with(pluginManager) {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
-                apply("aesthetic.android.lint")
+                apply("habittracker.android.lint")
             }
 
             extensions.configure<LibraryExtension> {

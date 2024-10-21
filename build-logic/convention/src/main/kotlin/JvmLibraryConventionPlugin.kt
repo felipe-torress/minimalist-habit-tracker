@@ -14,7 +14,7 @@
  *   limitations under the License.
  */
 
-import com.example.aesthetic.configureKotlinJvm
+import com.example.habittracker.configureKotlinJvm
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -23,7 +23,7 @@ class JvmLibraryConventionPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 apply("org.jetbrains.kotlin.jvm")
-                apply("aesthetic.android.lint")
+                apply("habittracker.android.lint")
             }
             configureKotlinJvm()
         }

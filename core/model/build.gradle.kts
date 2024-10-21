@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.aesthetic.jvm.library)
+    alias(libs.plugins.habittracker.jvm.library)
 }
 
 dependencies {

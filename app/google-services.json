@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "Your:App:Id",
         "android_client_info": {
-          "package_name": "com.example.aesthetic"
+          "package_name": "com.example.habittracker"
         }
       },
       "oauth_client": [],
@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "Your:App:Id",
         "android_client_info": {
-          "package_name": "com.example.aesthetic.demo.debug"
+          "package_name": "com.example.habittracker.demo.debug"
         }
       },
       "oauth_client": [],
@@ -47,7 +47,7 @@
       "client_info": {
         "mobilesdk_app_id": "Your:App:Id",
         "android_client_info": {
-          "package_name": "com.example.aesthetic.debug"
+          "package_name": "com.example.habittracker.debug"
         }
       },
       "oauth_client": [],
@@ -66,7 +66,7 @@
       "client_info": {
         "mobilesdk_app_id": "Your:App:Id",
         "android_client_info": {
-          "package_name": "com.example.aesthetic.demo"
+          "package_name": "com.example.habittracker.demo"
         }
       },
       "oauth_client": [],

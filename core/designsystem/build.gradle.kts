@@ -1,12 +1,12 @@
 plugins {
-    alias(libs.plugins.aesthetic.android.library)
-    alias(libs.plugins.aesthetic.android.library.compose)
-    alias(libs.plugins.aesthetic.android.library.jacoco)
+    alias(libs.plugins.habittracker.android.library)
+    alias(libs.plugins.habittracker.android.library.compose)
+    alias(libs.plugins.habittracker.android.library.jacoco)
     alias(libs.plugins.roborazzi)
 }
 
 android {
-    namespace = "com.example.aesthetic.core.designsystem"
+    namespace = "com.example.habittracker.core.designsystem"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

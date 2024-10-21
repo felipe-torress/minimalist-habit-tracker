@@ -1,4 +1,4 @@
-package com.example.aesthetic.core.model.data
+package com.example.habittracker.core.model.data
 
 import java.time.ZonedDateTime
 

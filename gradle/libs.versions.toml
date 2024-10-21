@@ -163,17 +163,17 @@ room = { id = "androidx.room", version.ref = "room" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
 
 # Plugins defined by this project
-aesthetic-android-application = { id = "aesthetic.android.application", version = "unspecified" }
-aesthetic-android-application-compose = { id = "aesthetic.android.application.compose", version = "unspecified" }
-aesthetic-android-application-firebase = { id = "aesthetic.android.application.firebase", version = "unspecified" }
-aesthetic-android-application-flavors = { id = "aesthetic.android.application.flavors", version = "unspecified" }
-aesthetic-android-application-jacoco = { id = "aesthetic.android.application.jacoco", version = "unspecified" }
-aesthetic-android-feature = { id = "aesthetic.android.feature", version = "unspecified" }
-aesthetic-android-hilt = { id = "aesthetic.android.hilt", version = "unspecified" }
-aesthetic-android-library = { id = "aesthetic.android.library", version = "unspecified" }
-aesthetic-android-library-compose = { id = "aesthetic.android.library.compose", version = "unspecified" }
-aesthetic-android-library-jacoco = { id = "aesthetic.android.library.jacoco", version = "unspecified" }
-aesthetic-android-lint = { id = "aesthetic.android.lint", version = "unspecified" }
-aesthetic-android-room = { id = "aesthetic.android.room", version = "unspecified" }
-aesthetic-android-test = { id = "aesthetic.android.test", version = "unspecified" }
-aesthetic-jvm-library = { id = "aesthetic.jvm.library", version = "unspecified" }
+habittracker-android-application = { id = "habittracker.android.application", version = "unspecified" }
+habittracker-android-application-compose = { id = "habittracker.android.application.compose", version = "unspecified" }
+habittracker-android-application-firebase = { id = "habittracker.android.application.firebase", version = "unspecified" }
+habittracker-android-application-flavors = { id = "habittracker.android.application.flavors", version = "unspecified" }
+habittracker-android-application-jacoco = { id = "habittracker.android.application.jacoco", version = "unspecified" }
+habittracker-android-feature = { id = "habittracker.android.feature", version = "unspecified" }
+habittracker-android-hilt = { id = "habittracker.android.hilt", version = "unspecified" }
+habittracker-android-library = { id = "habittracker.android.library", version = "unspecified" }
+habittracker-android-library-compose = { id = "habittracker.android.library.compose", version = "unspecified" }
+habittracker-android-library-jacoco = { id = "habittracker.android.library.jacoco", version = "unspecified" }
+habittracker-android-lint = { id = "habittracker.android.lint", version = "unspecified" }
+habittracker-android-room = { id = "habittracker.android.room", version = "unspecified" }
+habittracker-android-test = { id = "habittracker.android.test", version = "unspecified" }
+habittracker-jvm-library = { id = "habittracker.jvm.library", version = "unspecified" }
