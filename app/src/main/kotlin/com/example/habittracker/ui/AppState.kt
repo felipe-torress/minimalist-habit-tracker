@@ -10,13 +10,17 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import androidx.tracing.trace
+import com.example.habittracker.feature.habits.navigation.navigateToHabits
 import com.example.habittracker.feature.home.navigation.HOME_ROUTE
 import com.example.habittracker.feature.home.navigation.navigateToHome
 import com.example.habittracker.feature.profile.navigation.PROFILE_ROUTE
 import com.example.habittracker.feature.profile.navigation.navigateToProfile
+import com.example.habittracker.feature.progress.navigation.navigateToProgress
 import com.example.habittracker.navigation.TopLevelDestination
+import com.example.habittracker.navigation.TopLevelDestination.HABITS
 import com.example.habittracker.navigation.TopLevelDestination.HOME
 import com.example.habittracker.navigation.TopLevelDestination.PROFILE
+import com.example.habittracker.navigation.TopLevelDestination.PROGRESS
 
 @Composable
 fun rememberAppState(
@@ -61,6 +65,8 @@ class AppState(val navController: NavHostController) {
 
             when (topLevelDestination) {
                 HOME -> navController.navigateToHome(topLevelNavOptions)
+                HABITS -> navController.navigateToHabits(topLevelNavOptions)
+                PROGRESS -> navController.navigateToProgress(topLevelNavOptions)
                 PROFILE -> navController.navigateToProfile(topLevelNavOptions)
             }
         }

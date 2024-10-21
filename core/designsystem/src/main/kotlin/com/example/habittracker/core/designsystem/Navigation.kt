@@ -56,7 +56,6 @@ fun RowScope.HabitTrackerNavigationBarItem(
     icon: @Composable () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    selectedIcon: @Composable () -> Unit = icon,
     label: @Composable (() -> Unit)? = null,
     alwaysShowLabel: Boolean = true,
 ) {
@@ -66,7 +65,7 @@ fun RowScope.HabitTrackerNavigationBarItem(
         selected = selected,
         onClick = onClick,
         label = label,
-        icon = if (selected) selectedIcon else icon,
+        icon = icon,
         alwaysShowLabel = alwaysShowLabel,
         colors = NavigationBarItemDefaults.colors(
             selectedIconColor = HabitTrackerNavigationDefaults.navigationSelectedItemColor(),
@@ -101,10 +100,6 @@ fun HabitTrackerNavigationHomeTabSelectedPreview() {
         HabitTrackerIcons.AddUnselected,
         HabitTrackerIcons.PersonUnselected
     )
-    val selectedIcons = listOf(
-        HabitTrackerIcons.AddSelected,
-        HabitTrackerIcons.PersonSelected
-    )
 
     val selectedTabIndex = items.indexOf("Home")
 
@@ -115,12 +110,6 @@ fun HabitTrackerNavigationHomeTabSelectedPreview() {
                     icon = {
                         Icon(
                             imageVector = icons[index],
-                            contentDescription = item,
-                        )
-                    },
-                    selectedIcon = {
-                        Icon(
-                            imageVector = selectedIcons[index],
                             contentDescription = item,
                         )
                     },
@@ -141,10 +130,6 @@ fun HabitTrackerNavigationProfileTabSelectedPreview() {
         HabitTrackerIcons.AddUnselected,
         HabitTrackerIcons.PersonUnselected
     )
-    val selectedIcons = listOf(
-        HabitTrackerIcons.AddSelected,
-        HabitTrackerIcons.PersonSelected
-    )
 
     val selectedTabIndex = items.indexOf("Profile")
 
@@ -155,12 +140,6 @@ fun HabitTrackerNavigationProfileTabSelectedPreview() {
                     icon = {
                         Icon(
                             imageVector = icons[index],
-                            contentDescription = item,
-                        )
-                    },
-                    selectedIcon = {
-                        Icon(
-                            imageVector = selectedIcons[index],
                             contentDescription = item,
                         )
                     },

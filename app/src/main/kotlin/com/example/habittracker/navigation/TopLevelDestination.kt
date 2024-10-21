@@ -1,9 +1,11 @@
 package com.example.habittracker.navigation
 
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.annotation.DrawableRes
+import com.example.habittracker.core.designsystem.R as designSystemR
+import com.example.habittracker.feature.habits.R as habitsR
 import com.example.habittracker.feature.home.R as homeR
 import com.example.habittracker.feature.profile.R as profileR
-import com.example.habittracker.core.designsystem.icon.HabitTrackerIcons
+import com.example.habittracker.feature.progress.R as progressR
 
 /**
  * Type for the top level destinations in the application. Each of these destinations
@@ -11,18 +13,23 @@ import com.example.habittracker.core.designsystem.icon.HabitTrackerIcons
  * next within a single destination will be handled directly in composables.
  */
 enum class TopLevelDestination(
-    val selectedIcon: ImageVector,
-    val unselectedIcon: ImageVector,
-    val iconTextId: Int,
+    val title: Int,
+    @DrawableRes val icon: Int,
 ) {
     HOME(
-        selectedIcon = HabitTrackerIcons.AddSelected,
-        unselectedIcon = HabitTrackerIcons.AddUnselected,
-        iconTextId = homeR.string.feature_home_title,
+        title = homeR.string.feature_home_title,
+        icon = designSystemR.drawable.core_designsystem_ic_house_24dp,
+    ),
+    HABITS(
+        title = habitsR.string.feature_habits_title,
+        icon = designSystemR.drawable.core_designsystem_ic_goal_24dp,
+    ),
+    PROGRESS(
+        title = progressR.string.feature_progress_title,
+        icon = designSystemR.drawable.core_designsystem_ic_flame_24dp,
     ),
     PROFILE(
-        selectedIcon = HabitTrackerIcons.PersonSelected,
-        unselectedIcon = HabitTrackerIcons.PersonUnselected,
-        iconTextId = profileR.string.feature_profile_title,
+        title = profileR.string.feature_profile_title,
+        icon = designSystemR.drawable.core_designsystem_ic_user_round_24dp,
     )
 }
