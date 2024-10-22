@@ -9,10 +9,11 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.habittracker.core.designsystem.icon.HabitTrackerIcons
+import com.example.habittracker.core.designsystem.theme.HabitTrackerColors
 import com.example.habittracker.core.designsystem.theme.HabitTrackerTheme
-import com.example.habittracker.core.designsystem.theme.ThemePreviews
 
 /**
  * Habit Tracker navigation bar with content slot. Wraps Material 3 [NavigationBar].
@@ -28,7 +29,8 @@ fun HabitTrackerNavigationBar(
 ) {
     NavigationBar(
         modifier = modifier,
-        contentColor = HabitTrackerNavigationDefaults.navigationContentColor(),
+        containerColor = HabitTrackerColors.backgroundColor,
+        contentColor = HabitTrackerColors.darkGrey500,
         tonalElevation = 0.dp,
         content = content,
     )
@@ -68,11 +70,11 @@ fun RowScope.HabitTrackerNavigationBarItem(
         icon = icon,
         alwaysShowLabel = alwaysShowLabel,
         colors = NavigationBarItemDefaults.colors(
-            selectedIconColor = HabitTrackerNavigationDefaults.navigationSelectedItemColor(),
-            unselectedIconColor = HabitTrackerNavigationDefaults.navigationContentColor(),
-            selectedTextColor = HabitTrackerNavigationDefaults.navigationSelectedItemColor(),
-            unselectedTextColor = HabitTrackerNavigationDefaults.navigationContentColor(),
-            indicatorColor = HabitTrackerNavigationDefaults.navigationIndicatorColor(),
+            selectedIconColor = HabitTrackerColors.darkGrey500,
+            unselectedIconColor = HabitTrackerColors.darkGrey500,
+            selectedTextColor = HabitTrackerColors.darkGrey500,
+            unselectedTextColor = HabitTrackerColors.darkGrey500,
+            indicatorColor = HabitTrackerColors.softBlue100,
         ),
     )
 }
@@ -92,7 +94,7 @@ object HabitTrackerNavigationDefaults {
 }
 
 //region --- Previews ---
-@ThemePreviews
+@Preview
 @Composable
 fun HabitTrackerNavigationHomeTabSelectedPreview() {
     val items = listOf("Home", "Profile")
@@ -122,7 +124,7 @@ fun HabitTrackerNavigationHomeTabSelectedPreview() {
     }
 }
 
-@ThemePreviews
+@Preview
 @Composable
 fun HabitTrackerNavigationProfileTabSelectedPreview() {
     val items = listOf("Home", "Profile")
