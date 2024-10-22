@@ -5,6 +5,7 @@ import androidx.annotation.VisibleForTesting
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 //region HabitTracker Theme (Material Design 3) ---
 @VisibleForTesting
@@ -42,8 +43,18 @@ val lightColors = lightColorScheme(
 //endregion
 
 @Composable
-fun HabitTrackerTheme(content: @Composable () -> Unit) = MaterialTheme(
-    colorScheme = lightColors,
-    typography = typography,
-    content = content
-)
+fun HabitTrackerTheme(content: @Composable () -> Unit) {
+    // Obtain the system UI controller
+    val systemUiController = rememberSystemUiController()
+
+    systemUiController.setStatusBarColor(
+        color = HabitTrackerColors.backgroundColor,
+        darkIcons = true
+    )
+
+    MaterialTheme(
+        colorScheme = lightColors,
+        typography = typography,
+        content = content
+    )
+}
