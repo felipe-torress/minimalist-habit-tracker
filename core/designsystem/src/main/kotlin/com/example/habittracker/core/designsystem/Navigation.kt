@@ -9,6 +9,7 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.habittracker.core.designsystem.icon.HabitTrackerIcons
@@ -28,7 +29,7 @@ fun HabitTrackerNavigationBar(
     content: @Composable RowScope.() -> Unit,
 ) {
     NavigationBar(
-        modifier = modifier,
+        modifier = modifier.shadow(16.dp),
         containerColor = HabitTrackerColors.backgroundColor,
         contentColor = HabitTrackerColors.darkGrey500,
         tonalElevation = 0.dp,
