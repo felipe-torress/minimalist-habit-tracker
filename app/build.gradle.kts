@@ -46,6 +46,8 @@ android {
 
 dependencies {
     implementation(projects.feature.home)
+    implementation(projects.feature.habits)
+    implementation(projects.feature.progress)
     implementation(projects.feature.profile)
 
     implementation(projects.core.designsystem)

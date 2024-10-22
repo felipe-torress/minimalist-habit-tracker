@@ -3,9 +3,11 @@ package com.example.habittracker.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
+import com.example.habittracker.feature.habits.navigation.habitsScreen
 import com.example.habittracker.feature.home.navigation.HOME_ROUTE
 import com.example.habittracker.feature.home.navigation.homeScreen
 import com.example.habittracker.feature.profile.navigation.profileScreen
+import com.example.habittracker.feature.progress.navigation.progressScreen
 import com.example.habittracker.ui.AppState
 
 @Composable
@@ -21,6 +23,8 @@ fun NavHost(
         modifier = modifier
     ) {
         homeScreen()
+        habitsScreen()
+        progressScreen()
         profileScreen()
     }
 }

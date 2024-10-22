@@ -24,5 +24,7 @@ include(":core:designsystem")
 include(":core:model")
 include(":core:data")
 
-include(":feature:profile")
 include(":feature:home")
+include(":feature:habits")
+include(":feature:progress")
+include(":feature:profile")

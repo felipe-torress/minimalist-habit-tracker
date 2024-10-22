@@ -25,6 +25,7 @@ dependencies {
 
     implementation(libs.coil.kt.compose)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.accompanist.systemuicontroller)
 
     testImplementation(libs.androidx.compose.ui.test)
     testImplementation(libs.accompanist.testharness)

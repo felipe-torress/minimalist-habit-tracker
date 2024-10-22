@@ -1,46 +1,70 @@
 package com.example.habittracker.core.designsystem.theme
 
-import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.habittracker.core.designsystem.R
 
 //region --- Font Families ---
-val manropeFamily = FontFamily(
-    Font(R.font.manrope_extralight, FontWeight.ExtraLight),
-    Font(R.font.manrope_light, FontWeight.Light),
-    Font(R.font.manrope_regular, FontWeight.Normal),
-    Font(R.font.manrope_medium, FontWeight.Medium),
-    Font(R.font.manrope_semibold, FontWeight.SemiBold),
-    Font(R.font.manrope_bold, FontWeight.Bold),
-    Font(R.font.manrope_extrabold, FontWeight.ExtraBold)
+val firaFamily = FontFamily(
+    Font(resId = R.font.fira_mono_bold, weight = FontWeight.Bold),
+    Font(resId = R.font.fira_mono_medium, weight = FontWeight.Medium),
+    Font(resId = R.font.fira_mono_regular, weight = FontWeight.Normal),
+)
+
+val satoshiFamily = FontFamily(
+    Font(resId = R.font.satoshi_black, weight = FontWeight.Black),
+    Font(resId = R.font.satoshi_black_italic, weight = FontWeight.Black, style = FontStyle.Italic),
+    Font(resId = R.font.satoshi_bold, weight = FontWeight.Bold),
+    Font(resId = R.font.satoshi_bold_italic, weight = FontWeight.Bold, style = FontStyle.Italic),
+    Font(resId = R.font.satoshi_medium, weight = FontWeight.Medium),
+    Font(resId = R.font.satoshi_medium_italic, weight = FontWeight.Medium, style = FontStyle.Italic),
+    Font(resId = R.font.satoshi_regular, weight = FontWeight.Normal),
+    Font(resId = R.font.satoshi_italic, weight = FontWeight.Normal, style = FontStyle.Italic),
+    Font(resId = R.font.satoshi_light, weight = FontWeight.Light),
+    Font(resId = R.font.satoshi_light_italic, weight = FontWeight.Light, style = FontStyle.Italic),
 )
 //endregion
 
-// Set of Material typography styles to start with
-val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = manropeFamily,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    ),
-    titleLarge = TextStyle(
-        fontFamily = manropeFamily,
-        fontWeight = FontWeight.Bold,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = manropeFamily,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
+object HabitTrackerTypography {
+    // Satoshi
+    val headline4 = TextStyle(
+        fontFamily = satoshiFamily,
+        fontWeight = FontWeight.Black,
+        fontSize = 32.sp
     )
-)
+
+    val subtitle1 = TextStyle(
+        fontFamily = satoshiFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 18.sp
+    )
+
+    val bodyLarge = TextStyle(
+        fontFamily = satoshiFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 16.sp
+    )
+
+    val bodySmall = TextStyle(
+        fontFamily = satoshiFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 14.sp
+    )
+
+    val caption = TextStyle(
+        fontFamily = satoshiFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 12.sp
+    )
+
+    // Fira Mono
+    val bodySmallFira = TextStyle(
+        fontFamily = firaFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 14.sp
+    )
+}
