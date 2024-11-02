@@ -4,6 +4,7 @@ import java.time.ZonedDateTime
 
 data class Goal(
     val id: String,
+    val habitId: String,
     val name: String,
     val weeks: Int,
     val currentCompletions: Int,

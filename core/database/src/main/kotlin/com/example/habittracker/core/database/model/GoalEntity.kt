@@ -44,6 +44,7 @@ data class GoalEntity(
 
 fun GoalEntity.asGoal() = Goal(
     id = id,
+    habitId = habitId,
     name = name,
     weeks = weeks,
     currentCompletions = currentCompletions,

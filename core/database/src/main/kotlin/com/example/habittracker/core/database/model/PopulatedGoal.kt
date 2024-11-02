@@ -25,6 +25,7 @@ data class PopulatedGoal(
 
 fun PopulatedGoal.asGoal() = Goal(
     id = goal.id,
+    habitId = goal.habitId,
     name = goal.name,
     weeks = goal.weeks,
     currentCompletions = goal.currentCompletions,
