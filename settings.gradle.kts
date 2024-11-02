@@ -23,6 +23,7 @@ include(":app")
 include(":core:designsystem")
 include(":core:model")
 include(":core:data")
+include(":core:database")
 
 include(":feature:home")
 include(":feature:habits")

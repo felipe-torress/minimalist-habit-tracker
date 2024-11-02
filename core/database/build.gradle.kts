@@ -2,11 +2,11 @@ plugins {
     alias(libs.plugins.habittracker.android.library)
     alias(libs.plugins.habittracker.android.library.jacoco)
     alias(libs.plugins.habittracker.android.hilt)
-    id("kotlinx-serialization")
+    alias(libs.plugins.habittracker.android.room)
 }
 
 android {
-    namespace = "com.example.habittracker.core.data"
+    namespace = "com.example.habittracker.core.database"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -15,9 +15,9 @@ android {
 
 dependencies {
     // api(projects.core.common)
+    // api(projects.core.database)
     // api(projects.core.datastore)
     // api(projects.core.network)
-    api(projects.core.database)
 
     implementation(projects.core.model)
 

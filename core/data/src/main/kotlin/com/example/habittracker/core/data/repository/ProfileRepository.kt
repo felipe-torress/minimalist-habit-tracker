@@ -1,7 +1,6 @@
 package com.example.habittracker.core.data.repository
 
 import com.example.habittracker.core.model.data.Artist
-import com.example.habittracker.core.model.data.ProfileImage
 
 interface ProfileRepository {
 
