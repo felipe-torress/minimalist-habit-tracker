@@ -43,5 +43,5 @@ interface GoalDao {
      * Fetches all the goals of the user related to a given Habit
      */
     @Query(value = "SELECT * FROM goals WHERE habit_id = :habitId")
-    fun getGoalsForHabit(habitId: String): Flow<List<PopulatedGoal>>
+    fun getGoalsFromHabit(habitId: String): Flow<List<PopulatedGoal>>
 }

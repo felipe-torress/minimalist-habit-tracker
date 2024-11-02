@@ -26,7 +26,7 @@ class LocalGoalsRepository @Inject constructor(
         goalEntity.asGoal()
     }
 
-    override fun getGoalsForHabit(habitId: String): Flow<List<Goal>> = goalDao.getGoalsForHabit(habitId).map { habitEntities ->
+    override fun getGoalsFromHabit(habitId: String): Flow<List<Goal>> = goalDao.getGoalsFromHabit(habitId).map { habitEntities ->
         habitEntities.map(PopulatedGoal::asGoal)
     }
 }

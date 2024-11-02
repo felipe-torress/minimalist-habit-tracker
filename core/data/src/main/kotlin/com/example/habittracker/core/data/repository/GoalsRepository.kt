@@ -30,5 +30,5 @@ interface GoalsRepository {
      * Gets all [Goal]s related to a given [Habit]
      * @param habitId id of the [Habit]
      */
-    fun getGoalsForHabit(habitId: String): Flow<List<Goal>>
+    fun getGoalsFromHabit(habitId: String): Flow<List<Goal>>
 }
