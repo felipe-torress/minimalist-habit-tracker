@@ -4,12 +4,12 @@ import java.time.ZonedDateTime
 
 data class Habit(
     val id: String,
-    val name: HabitColor,
-    val color: String,
-    val tasks: List<HabitTask>,
-    val goal: Goal?,
+    val name: String,
     val createdAt: ZonedDateTime,
     val updatedAt: ZonedDateTime,
+    val color: HabitColor,
+    val goals: List<Goal>,
+    val tasks: List<HabitTask>,
 )
 
 enum class HabitColor {

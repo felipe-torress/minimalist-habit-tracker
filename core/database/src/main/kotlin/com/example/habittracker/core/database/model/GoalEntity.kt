@@ -2,6 +2,7 @@ package com.example.habittracker.core.database.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 import com.example.habittracker.core.model.data.Goal
 import java.time.ZonedDateTime
@@ -11,9 +12,21 @@ import java.util.UUID
  * Defines a Habit Goal.
  * It has a many to many relationship with [HabitTaskEntity]
  */
-@Entity(tableName = "goals")
+@Entity(
+    tableName = "goals",
+    foreignKeys = [
+        ForeignKey(
+            entity = HabitEntity::class,
+            parentColumns = ["id"],
+            childColumns = ["habit_id"],
+            onDelete = ForeignKey.CASCADE
+        )
+    ]
+)
 data class GoalEntity(
     @PrimaryKey val id: String = UUID.randomUUID().toString(),
+    @ColumnInfo(name = "habit_id")
+    val habitId: String,
     val name: String,
     val weeks: Int,
     @ColumnInfo(name = "current_completions")
