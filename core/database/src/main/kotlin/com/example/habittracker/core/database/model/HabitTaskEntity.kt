@@ -5,7 +5,6 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 import com.example.habittracker.core.model.data.HabitTask
-import com.example.habittracker.core.model.data.RecurrenceType
 import java.time.DayOfWeek
 import java.time.LocalTime
 import java.time.ZonedDateTime
@@ -36,10 +35,8 @@ data class HabitTaskEntity(
     val currentWeeklyCompletions: Int,
     @ColumnInfo(name = "required_weekly_completions")
     val requiredWeeklyCompletions: Int,
-    @ColumnInfo(name = "recurrence_type")
-    val recurrenceType: RecurrenceType,
     @ColumnInfo(name = "days_of_week")
-    val daysOfWeek: List<DayOfWeek>?,
+    val daysOfWeek: List<DayOfWeek>,
     @ColumnInfo(name = "created_at")
     val createdAt: ZonedDateTime,
     @ColumnInfo(name = "updated_at")
@@ -52,7 +49,6 @@ fun HabitTaskEntity.asHabitTask() = HabitTask(
     time = time,
     currentWeeklyCompletions = currentWeeklyCompletions,
     requiredWeeklyCompletions = requiredWeeklyCompletions,
-    recurrenceType = recurrenceType,
     daysOfWeek = daysOfWeek,
     createdAt = createdAt,
     updatedAt = updatedAt,

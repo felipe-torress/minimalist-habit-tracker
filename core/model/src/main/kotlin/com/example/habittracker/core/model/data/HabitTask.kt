@@ -10,16 +10,7 @@ data class HabitTask(
     val time: LocalTime,
     val currentWeeklyCompletions: Int,
     val requiredWeeklyCompletions: Int,
-    val recurrenceType: RecurrenceType,
-    val daysOfWeek: List<DayOfWeek>?,
+    val daysOfWeek: List<DayOfWeek>,
     val createdAt: ZonedDateTime,
     val updatedAt: ZonedDateTime,
 )
-
-enum class RecurrenceType {
-    // No days of week data needed
-    DAILY,
-
-    // Days of week data needed
-    WEEKLY
-}
