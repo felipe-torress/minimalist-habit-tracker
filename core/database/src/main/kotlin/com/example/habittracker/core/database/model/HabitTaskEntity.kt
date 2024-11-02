@@ -45,6 +45,7 @@ data class HabitTaskEntity(
 
 fun HabitTaskEntity.asHabitTask() = HabitTask(
     id = id,
+    habitId = habitId,
     name = name,
     time = time,
     currentWeeklyCompletions = currentWeeklyCompletions,

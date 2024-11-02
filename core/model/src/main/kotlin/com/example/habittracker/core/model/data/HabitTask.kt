@@ -6,6 +6,7 @@ import java.time.ZonedDateTime
 
 data class HabitTask(
     val id: String,
+    val habitId: String,
     val name: String,
     val time: LocalTime,
     val currentWeeklyCompletions: Int,

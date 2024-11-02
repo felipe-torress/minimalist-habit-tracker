@@ -22,6 +22,12 @@ interface HabitDao {
     suspend fun insertHabit(habit: HabitEntity)
 
     /**
+     * Deletes a Habit
+     */
+    @Query("DELETE FROM habits WHERE id = :habitId")
+    suspend fun deleteHabit(habitId: String)
+
+    /**
      * Fetches all the habits of a user
      */
     @Transaction
@@ -34,5 +40,5 @@ interface HabitDao {
      */
     @Transaction
     @Query(value = "SELECT * FROM habits WHERE id = :habitId")
-    fun getHabitById(habitId: String) : Flow<List<PopulatedHabit>>
+    fun getHabitById(habitId: String) : Flow<PopulatedHabit>
 }
